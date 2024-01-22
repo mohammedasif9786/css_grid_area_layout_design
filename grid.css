@@ -1,0 +1,48 @@
+#parGrid{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 50px 250px;
+    text-align: center;
+    gap: 10px;
+    font-size: 34px;
+
+    grid-template-areas: "header header header"
+                         "upleft center upright"
+                         "lowleft center lowright";
+
+                        
+}
+
+#header{
+    background-color: #1a8976;
+    grid-area: header;
+}
+
+#upleft{
+    background-color: #1c5643;
+    grid-area: upleft;
+}
+
+#center{
+    background-color: #3c1235;
+    grid-area: center;
+}
+
+#upright{
+    background-color: #4c6444;
+    grid-area: upright;
+}
+
+#lowleft{
+    background-color: #6c4536;
+    grid-area: lowleft;
+}
+
+#lowright{
+    background-color: #5e7896;
+    grid-area: lowright;
+}
+body{
+    background-color: #2d6785;
+}
